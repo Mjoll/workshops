@@ -1,0 +1,11 @@
+{
+  "name": "ping",
+  "private": true,
+  "scripts": {
+    "install": "npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "test": "npm test --prefix server",
+    "start": "npm run build:client && npm run build:server && node server/dist/index.js"
+  }
+}
